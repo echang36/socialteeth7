@@ -1,0 +1,13 @@
+<%= form_for @contribution do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :ad %><br />
+    <%= f.text_field :ad %>
+  </p>
+  <p>
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

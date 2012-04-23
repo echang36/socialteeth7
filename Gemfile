@@ -9,6 +9,7 @@ gem 'sqlite3'
 
 gem "nifty-generators", :group => :development
 gem "devise"
+gem "cancan"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -36,3 +37,4 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+gem "mocha", :group => :test

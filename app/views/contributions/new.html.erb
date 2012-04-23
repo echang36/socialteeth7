@@ -1,0 +1,21 @@
+<% title "New Contribution" %>
+
+<%= form_for @contribution do |f| %>
+  <%= f.error_messages %>
+  
+  <p>
+	<%= f.hidden_field :ad, :value=>@ad %>
+  </p>
+  <p>
+    <%= f.label :ad %><br />
+    <%= f.text_field :ad %>
+  </p>
+  <p>
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
+
+
+<p><%= link_to "Back to List", contributions_path %></p>
